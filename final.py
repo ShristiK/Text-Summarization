@@ -108,15 +108,9 @@ for i in range(len(sentences)):
 
 G = nx.from_numpy_array(sentence_similarity_martix)
 
-
-
-
-
-
-
-
 assert nx.is_connected(G)
 
+### finding minimum connected dominating set using a greedy approach
 
 G2 = copy.deepcopy(G)
 
@@ -157,4 +151,4 @@ while priority_queue:
 		# Step 3: verify the result
 assert nx.is_dominating_set(G, fixed_nodes) and nx.is_connected(G.subgraph(fixed_nodes))
 
-print(fixed_nodes)
+print fixed_nodes
