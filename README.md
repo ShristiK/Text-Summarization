@@ -16,13 +16,17 @@ Major challenges faced in extractive summarization arises because of scoring of 
 The Data used in this project is available in the Data folder. It contains tennis news articles from different newspapers and the task is to generate a coherent and concise summary from it. Within the document the data in column **"article text"** is used for summarization. Sentences are tokenized and cleaned by removing punctuation marks and are converted to lowercase.
 
 # Libraries and Technologies Used
+
 **nltk, Google Word2Vec, Gensim, Networkx, numpy, matplotlib, pandas, sklearn.**
 
 
 # Approach 
 Generating Text Summary using minimum Connected Dominating set can be divied in the following major steps:
+
 **STEP 1 : PreProcessing (removing stop words, non letter characters, turning to lower case letters)**
+
 **STEP 2 : Sentence Graph Generation where edges are formed using cosine similarity between sentences**
+
 **STEP 3 : Finding minimum Connected Dominating Set and outputting the summary**
 
 Each subpart is described in detail below.
